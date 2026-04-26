@@ -1,8 +1,8 @@
+ignoreWorkspaceRootCheck: true
+
 shellEmulator: true
 
 trustPolicy: no-downgrade
-
-ignoreWorkspaceRootCheck: true
 
 packages:
   - playground

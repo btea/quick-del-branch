@@ -1,24 +1,20 @@
 {
-  "publisher": "antfu",
-  "name": "ext-name",
-  "displayName": "ext-name",
+  "publisher": "btea",
+  "name": "quick-del-branch",
+  "displayName": "Quick Delete Branch",
   "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@10.33.2",
-  "description": "",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "description": "Quickly delete local git branches from a branch picker",
+  "author": "btea",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/ext-name#readme",
+  "homepage": "https://github.com/btea/quick-del-branch#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/antfu/ext-name"
+    "url": "https://github.com/btea/quick-del-branch"
   },
   "bugs": {
-    "url": "https://github.com/antfu/ext-name/issues"
-  },
-  "sponsor": {
-    "url": "https://github.com/sponsors/antfu"
+    "url": "https://github.com/btea/quick-del-branch/issues"
   },
   "categories": [
     "Other"
@@ -37,10 +33,15 @@
     "onStartupFinished"
   ],
   "contributes": {
-    "commands": [],
+    "commands": [
+      {
+        "command": "quick-del-branch.show",
+        "title": "Quick Delete Branch: Show Branches"
+      }
+    ],
     "configuration": {
       "type": "object",
-      "title": "ext-name",
+      "title": "Quick Delete Branch",
       "properties": {}
     }
   },
@@ -50,6 +51,7 @@
     "prepare": "nr update",
     "update": "vscode-ext-gen --output src/generated/meta.ts",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "vscode:prepublish": "nr build",
