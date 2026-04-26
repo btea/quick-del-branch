@@ -2,10 +2,13 @@ shellEmulator: true
 
 trustPolicy: no-downgrade
 
+ignoreWorkspaceRootCheck: true
+
 packages:
   - playground
   - examples/*
-onlyBuiltDependencies:
-  - '@vscode/vsce-sign'
-  - esbuild
-  - keytar
+
+allowBuilds:
+  '@vscode/vsce-sign': true
+  esbuild: true
+  keytar: true
