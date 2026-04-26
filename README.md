@@ -2,6 +2,8 @@
 
 A VS Code extension for quickly deleting local git branches with rich branch info display.
 
+<img src="https://github.com/btea/quick-del-branch/blob/main/show.gif?raw=true" alt="Preview" width="600">
+
 ## Features
 
 - **Branch list sorted by latest commit time** — most recently updated branches appear first
